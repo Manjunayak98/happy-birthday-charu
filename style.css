@@ -190,3 +190,229 @@ button:hover{
     display:none;
 
 }
+/* ==========================
+   GAME SECTION
+========================== */
+
+#game{
+    min-height:100vh;
+    padding:80px 20px;
+    text-align:center;
+    background:#fff8fb;
+}
+
+#game h1{
+    font-size:42px;
+    color:#ff4f87;
+    margin:15px 0;
+}
+
+#game p{
+    font-size:18px;
+    margin-bottom:25px;
+}
+
+#score{
+    width:170px;
+    margin:20px auto;
+    padding:15px;
+    border-radius:15px;
+    background:white;
+    font-size:24px;
+    font-weight:bold;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+}
+
+#heartArea{
+    position:relative;
+    width:100%;
+    height:500px;
+    overflow:hidden;
+    border-radius:20px;
+    background:#ffeef6;
+}
+
+/* ==========================
+   PHOTO GALLERY
+========================== */
+
+#gallery{
+    padding:80px 20px;
+    text-align:center;
+    background:white;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:18px;
+    margin-top:40px;
+}
+
+.gallery img{
+    width:100%;
+    border-radius:18px;
+    transition:.4s;
+    cursor:pointer;
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+}
+
+/* ==========================
+   LOVE LETTER
+========================== */
+
+#letter{
+
+    padding:80px 25px;
+
+    background:#fff6fa;
+
+    text-align:center;
+
+}
+
+#letter h2{
+
+    font-size:40px;
+
+    color:#ff4f87;
+
+    margin-bottom:30px;
+
+}
+
+#letter p{
+
+    max-width:850px;
+
+    margin:auto;
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:25px;
+
+    line-height:2;
+
+    font-size:18px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.1);
+
+}
+
+/* ==========================
+   FINAL PAGE
+========================== */
+
+#final{
+
+    min-height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:30px;
+
+    background:linear-gradient(135deg,#ff7eb3,#ffb8d6);
+
+    color:white;
+
+}
+
+#final h1{
+
+    font-size:60px;
+
+    margin-bottom:20px;
+
+}
+
+#final h2{
+
+    font-family:'Pacifico',cursive;
+
+    font-size:40px;
+
+    margin-bottom:30px;
+
+}
+
+#final p{
+
+    max-width:800px;
+
+    line-height:2;
+
+    font-size:22px;
+
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media(max-width:768px){
+
+.hero h1{
+
+font-size:38px;
+
+}
+
+.hero h3{
+
+font-size:28px;
+
+}
+
+.hero p{
+
+font-size:17px;
+
+}
+
+button{
+
+width:100%;
+
+}
+
+.gallery{
+
+grid-template-columns:1fr;
+
+}
+
+#final h1{
+
+font-size:38px;
+
+}
+
+#final h2{
+
+font-size:28px;
+
+}
+
+#letter p{
+
+padding:22px;
+
+font-size:16px;
+
+}
+
+}
